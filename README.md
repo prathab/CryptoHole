@@ -1,7 +1,6 @@
 # CryptoHole
 
-* The world's first non-discriminating ERC20 Token
-* Let go of your digital assets
-* Collect CryptoHoleToken as a souvenir when you transfer ether to the CryptoHole contract
+* WasteBin for Ether and ERC Tokens
+* Ether and ERC20 tokens etc transferred to the CryptoHole contract can never be reclaimed and will be lost forever
 
-CryptoHole is equivalent to a BlackHole.  Any digital asset Ether, ERC20 tokens etc transferred to the CryptoHole contract can never be recovered.
+
