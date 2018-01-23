@@ -14,9 +14,11 @@ contract("CryptoHole", function(accounts) {
     });
 
     it('token should be allocated', async function() {
-	await this.token.sendTransaction({ value: 100, from: accounts[0] });
-	let balance = await this.token.balanceOf(accounts[0]);
-	balance.should.be.bignumber.equal(1);
+	for (let i = 0; i < 10; ++i) {
+	    await this.token.sendTransaction({ value: (i + 1) * 100, from: accounts[i] });
+	    let balance = await this.token.balanceOf(accounts[i]);
+	    balance.should.be.bignumber.equal(1);
+	}
     });
 
 });
