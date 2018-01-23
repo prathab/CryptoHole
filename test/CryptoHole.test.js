@@ -1,16 +1,16 @@
 const BigNumber = web3.BigNumber;
 
-const CryptoHoleToken = artifacts.require('CryptoHoleToken');
+const CryptoHole = artifacts.require('CryptoHole');
 
 require('chai')
     .use(require('chai-as-promised'))
     .use(require('chai-bignumber')(BigNumber))
     .should();
 
-contract("CryptoHoleToken", function(accounts) {
+contract("CryptoHole", function(accounts) {
     
     beforeEach(async function () {
-	this.token = await CryptoHoleToken.new();
+	this.token = await CryptoHole.new();
     });
 
     it('token should be allocated', async function() {
