@@ -17,10 +17,8 @@ contract CryptoHole is StandardToken {
 
   function () public payable {
     address recipient = msg.sender;
-    if (balances[recipient] == 0) {
-      totalSupply = totalSupply.add(1);
-      balances[recipient] = balances[recipient].add(1);
-      Transfer(address(0), recipient, 1);
-    }
+    totalSupply = totalSupply.add(1);
+    balances[recipient] = balances[recipient].add(1);
+    Transfer(address(0), recipient, 1);
   }
 }
